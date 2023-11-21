@@ -1,4 +1,4 @@
-''''''
+'''Menu for the software.'''
 import tkinter as tk
 from .about import About
 
@@ -13,7 +13,10 @@ class Menu(tk.Menu):
         self.master.config(menu=self)
 
     def add_menu(self):
-        ''':method: add option menu into the main menu'''
+        ''':method: add menu to the software as well as define the functionality of the
+            menu widgets
+        '''
+
         # File Menu
         file_menu = tk.Menu(tearoff=False)
         file_menu.add_command(label="Open Project",

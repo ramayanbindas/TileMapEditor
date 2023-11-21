@@ -1,3 +1,7 @@
+'''Widget displays the name of the project on top when it is created. And controls the
+   focusing and deleting the project.
+'''
+
 import tkinter as tk
 
 

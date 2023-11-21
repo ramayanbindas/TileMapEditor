@@ -1,9 +1,18 @@
+'''Canvas Widget The workspace as well as the spreedsheet view for the software.'''
 import tkinter as tk
 from PIL import Image, ImageTk
 from .project_info import DEFAULT_CANVAS_TYPE
 
 
 class Canvas(tk.Canvas):
+    '''class: Provide the workspace to create tilemap for the game. As well as the
+        class hold the medthod to view spreadsheet.
+        ```
+        MayBe In Future This class become the base class for both the canvas
+        and the spreedsheet canvas.
+        ```
+    '''
+
     def __init__(self, app, widget: tk.Widget, project_info: object, **kw):
         super().__init__(widget, **kw)
         self.app = app

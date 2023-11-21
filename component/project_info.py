@@ -1,7 +1,9 @@
-''''''
+'''Project related script are prejent here. All the project data are hendled by the
+    :class ProjectInfo:
+'''
 import tkinter as tk
 
-# CONSTANTS
+# CONSTANTS FOR THE PORJECT
 DEFAULT_PROJECTNUM = 1
 DEFAULT_PROJECTNAME = f"untitled{DEFAULT_PROJECTNUM}.json"
 DEFAULT_CANVAS_TYPE = ("infinity", "fixed")
@@ -10,6 +12,10 @@ DEFAULT_CANVAS_SIZE = (1200, 800)
 
 
 class ProjectInfoMessage(tk.Toplevel):
+    '''class: Toplevel window apperes always when some one start the tilemap first time.
+       Or some tries to create new project. Or when their is no existing porject out there.
+    '''
+
     def __init__(self, app, parent: tk.Widget, **kw):
         super().__init__(parent, **kw)
         # design

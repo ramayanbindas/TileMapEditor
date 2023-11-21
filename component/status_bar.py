@@ -1,8 +1,14 @@
-''''''
+'''Widget display some specific information about the project below. A bar show the tile
+    coordinates, canvas sizes, zoom level...
+'''
 import tkinter as tk
 
 
 class StatusBar(tk.Frame):
+    '''class: Widget display some specific information about the project below. A bar show the tile
+        coordinates, canvas sizes, zoom level...
+    '''
+
     def __init__(self, app, parent: tk.Widget, **kw):
         super().__init__(parent, **kw)
         self.app = app
